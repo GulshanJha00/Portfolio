@@ -1,6 +1,7 @@
 "use client";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
@@ -9,32 +10,34 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>Next.js</li>
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>MongoDB</li>
         <li>JavaScript</li>
         <li>React</li>
       </ul>
     ),
   },
   {
-    title: "Education",
+    title: "Experience",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Full stack Developer in Tripfox Travellers</li>
+        <li>Tech Core Member of BYTE Club</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
+    title: "Projects",
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <Link href={"https://github.com/GulshanJha00/RecoveryNet"}> <li>RecoverNet (a simple lost and found app)</li> </Link>
+        <Link href={"https://github.com/GulshanJha00/Netflix"}><li>Netflix</li></Link>
+        <Link href={"https://github.com/GulshanJha00/Pinterest-Fullstack-Clone"}> <li>Pinterest Clone</li> </Link>
+        <Link href={"https://nieved.vercel.app"}><li>NIEVED (app for notes)</li></Link>
       </ul>
     ),
   },
@@ -57,12 +60,9 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          I&apos;m a 2nd-year B.Tech student at the National Institute of Engineering with a knack for web development and a budding passion for DevOps. My expertise lies in crafting full-stack applications using the MERN stack (MongoDB, Express, React, Node.js), with hands-on experience in Next.js and Node.js for server-side magic. <br/>
+
+Right now, I&apos;m diving into GSAP to bring life to websites with smooth, eye-catching animations that enhance user experiences. 
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -77,14 +77,14 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              Experience{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
-              Certifications{" "}
+              Projects{" "}
             </TabButton>
           </div>
           <div className="mt-8">

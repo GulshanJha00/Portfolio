@@ -36,7 +36,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Passionate about building innovative solutions and crafting seamless user experiences. I bring ideas to life with code, specializing in modern web technologies like MERN stack and Next.js. Let's create something awesome together!
+          Passionate about building innovative solutions and crafting seamless user experiences. I bring ideas to life with code, specializing in modern web technologies like MERN stack and Next.js. Let&apos;s create something awesome together!
           </p>
           <div>
             <Link
@@ -63,9 +63,9 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/original.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
             />

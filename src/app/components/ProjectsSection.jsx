@@ -7,56 +7,47 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "RecoverNet",
+    description: "A simple lost and found app",
+    image: "/images/projects/recoverynet.png",
+    tag: ["All", "Full Stack"],
+    gitUrl: "https://github.com/GulshanJha00/RecoveryNet",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Netflix Clone",
+    description: "Netflix clone app",
+    image: "/images/projects/netflix.png",
+    tag: ["All", "Full Stack"],
+    gitUrl: "https://github.com/GulshanJha00/Netflix",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Pinterest Fullstack Clone",
+    description: "Pinterest clone app",
+    image: "/images/projects/pinterest.png",
+    tag: ["All", "Full Stack"],
+    gitUrl: "https://github.com/GulshanJha00/Pinterest-Fullstack-Clone",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    title: "NIEVED (App for Notes)",
+    description: "A platform for note sharing",
+    image: "/images/projects/nieved.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://nieved.vercel.app",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Sahitya",
+    description: "A platform for music course",
+    image: "/images/projects/sahitya.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://nieved.vercel.app",
     previewUrl: "/",
   },
 ];
@@ -92,13 +83,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Full Stack"
+          isSelected={tag === "Full Stack"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Frontend"
+          isSelected={tag === "Frontend"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

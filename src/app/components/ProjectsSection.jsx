@@ -37,9 +37,9 @@ const projectsData = [
     title: "NIEVED (App for Notes)",
     description: "A platform for note sharing",
     image: "/images/projects/nieved.png",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://nieved.vercel.app",
-    previewUrl: "/",
+    tag: ["All", "Full Stack"],
+    gitUrl: "https://github.com/GulshanJha00/Ved",
+    previewUrl: "https://nieved.vercel.app",
   },
   {
     id: 5,
@@ -47,9 +47,28 @@ const projectsData = [
     description: "A platform for music course",
     image: "/images/projects/sahitya.png",
     tag: ["All", "Frontend"],
-    gitUrl: "https://nieved.vercel.app",
+    gitUrl: "https://github.com/GulshanJha00/Sahitya",
     previewUrl: "/",
   },
+  {
+    id: 6,
+    title: "ByteScan",
+    description: "Link to qr Generator",
+    image: "/images/projects/sahitya.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/GulshanJha00/ByteScan",
+    previewUrl: "https://bytescan.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "CoinCraft",
+    description: "Detailed Crypto Analysis Website",
+    image: "/images/projects/sahitya.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/GulshanJha00/CoinCraft",
+    previewUrl: "https://cryptocoinverse.vercel.app/",
+  },
+  
 ];
 
 const ProjectsSection = () => {
